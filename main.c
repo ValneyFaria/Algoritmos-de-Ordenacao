@@ -9,11 +9,13 @@
 #include "Radix_Sort.c"
 #include "Circle_Sort.c"
 #include "Bubble_Sort.c"
+#include "Pancake_Sort.c"
 #include "Counting_Sort.c"
+#include "Patience_Sort.c"
 #include "Cocktail_Sort.c"
 #include "Insertion_Sort.c"
 #include "Selection_Sort.c"
-#include "Pancake_Sort.c"
+
 
 
 
@@ -51,7 +53,7 @@ int main() {
 	// Gnome_Sort(vetor, TAM);
 	// Insertion_Sort(vetor,TAM);
 	// Pancake_Sort(vetor, TAM);
-	
+	Patience_Sort(vetor, TAM);
 
 
 	
