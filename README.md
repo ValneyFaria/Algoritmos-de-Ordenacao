@@ -6,3 +6,4 @@ Algoritmos incluídos:
 Bubble Sort
 Selection Sort
 Merge Sort
+Heap Sort

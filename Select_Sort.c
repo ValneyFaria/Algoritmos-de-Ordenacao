@@ -1,16 +1,16 @@
-void selection_sort (int num[], int tam) {
+void Selection_Sort (int vetor[], int TAM) {
 	int i, j, min, aux;
 
-	for (i = 0; i < (tam - 1); i++) {
+	for (i = 0; i < (TAM - 1); i++) {
 		min = i;
-		for (j = (i + 1); j < tam; j++) {
-			if (num[j] < num[min])
+		for (j = (i + 1); j < TAM; j++) {
+			if (vetor[j] < vetor[min])
 				min = j;
 		}
-		if (num[i] != num[min]) {
-			aux = num[i];
-			num[i] = num[min];
-			num[min] = aux;
+		if (vetor[i] != vetor[min]) {
+			aux = vetor[i];
+			vetor[i] = vetor[min];
+			vetor[min] = aux;
 		}
 	}
 }

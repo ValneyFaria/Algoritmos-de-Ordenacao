@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void Bubble_Sort(int *vetor, int sizeVet) {
+void Bubble_Sort(int *vetor, int TAM) {
 	int k, j, aux;
 
-	for (k = sizeVet - 1; k > 0; k--) { 		// PERCORRE O VETOR DO FINAL PARA O INICIO
+	for (k = TAM - 1; k > 0; k--) { 		// PERCORRE O VETOR DO FINAL PARA O INICIO
 		for (j = 0; j < k; j++) { 				// J SAI DA POSIÇÃO 0 E PERCORRE ATÉ O I
 			if (vetor[j] > vetor[j + 1]) { 		// SE A POSIÇÃO EM QUE J ESTÁ CONTIVER UM VALOR MENOR
 				aux          = vetor[j];		// QUE A PROXIMA POSIÇÃO
@@ -14,7 +14,7 @@ void Bubble_Sort(int *vetor, int sizeVet) {
 	}
 }
 
-void imprimeCrescente(int *vetor, int sizeVet) {
+void imprimeCrescente(int *vetor, int TAM) {
 	int i = 0;
 
 	for(i = 0; i < 10; i++) {
