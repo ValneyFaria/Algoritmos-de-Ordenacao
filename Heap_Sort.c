@@ -1,5 +1,6 @@
 void Heap_Sort(int vetor[], int TAM) {
 	int i = TAM / 2, pai, filho, t;
+	
 	while(true) {
 		if (i > 0) {
 			i--;

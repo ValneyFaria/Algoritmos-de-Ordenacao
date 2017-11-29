@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 void merge(int vetor[], int comeco, int meio, int fim) {
 	int com1 = comeco, com2 = meio + 1, comAux = 0, TAM = fim - comeco + 1;
 	int *vetAux;
