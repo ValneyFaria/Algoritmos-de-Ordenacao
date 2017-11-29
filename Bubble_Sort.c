@@ -13,11 +13,3 @@ void Bubble_Sort(int vetor[], int TAM) {
 		}
 	}
 }
-
-void imprimeCrescente(int vetor[], int TAM) {
-	int i = 0;
-
-	for(i = 0; i < 10; i++) {
-		printf("%d	", vetor[i]);
-	}
-}

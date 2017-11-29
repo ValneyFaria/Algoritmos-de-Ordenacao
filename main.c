@@ -1,10 +1,21 @@
 #include <stdio.h>
+#include "Bogo_Sort.c"
 #include "Bead_Sort.c"
 #include "Heap_Sort.c"
+#include "Comb_Sort.c"
 #include "Merge_Sort.c"
+#include "Gnome_Sort.c"
+#include "Cycle_Sort.c"
 #include "Radix_Sort.c"
+#include "Circle_Sort.c"
 #include "Bubble_Sort.c"
+#include "Counting_Sort.c"
+#include "Cocktail_Sort.c"
+#include "Insertion_Sort.c"
 #include "Selection_Sort.c"
+#include "Pancake_Sort.c"
+
+
 
 #define TAM 10
 
@@ -31,10 +42,25 @@ int main() {
 	// Heap_Sort(vetor, TAM);
 	// Radix_Sort(vetor, TAM);
 	// Bead_Sort(vetor, TAM);
+	// Bogo_Sort(vetor, TAM);
+	// Circle_Sort(vetor, TAM);
+	// Cocktail_Sort(vetor, TAM);
+	// Comb_Sort(vetor, TAM);
+	// Counting_Sort(vetor, TAM);
+	// Cycle_Sort(vetor, TAM);
+	// Gnome_Sort(vetor, TAM);
+	// Insertion_Sort(vetor,TAM);
+	// Pancake_Sort(vetor, TAM);
+	
+
 
 	
-	printf("O vetor ordenado crescente eh:\n");
-	imprimeCrescente(vetor, TAM);
+	printf("Vetor ordenado crescente:\n");
+
+	for(i = 0; i < TAM; i++) {
+		printf("%d	", vetor[i]);
+	}	
+
 	
 	return 0;
 }
