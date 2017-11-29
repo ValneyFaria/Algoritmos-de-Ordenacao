@@ -7,6 +7,7 @@
 #include "Gnome_Sort.c"
 #include "Cycle_Sort.c"
 #include "Radix_Sort.c"
+#include "Quick_Sort.c"
 #include "Circle_Sort.c"
 #include "Bubble_Sort.c"
 #include "Pancake_Sort.c"
@@ -15,6 +16,7 @@
 #include "Cocktail_Sort.c"
 #include "Insertion_Sort.c"
 #include "Selection_Sort.c"
+#include "Permutation_Sort.c"
 
 
 
@@ -24,6 +26,8 @@
 int main() {
 	int vai = 1, aux = 0;
 	int i = 0, vetor[TAM] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+
+	// int TAM = sizeof vetor / sizeof vetor[0]; // DESCOBRIR O TAMANHO DE UM VETOR
 
 	while (vai == 1) {
 		printf("Digite um valor para escolher qual algoritmo testar:\n");
@@ -53,15 +57,14 @@ int main() {
 	// Gnome_Sort(vetor, TAM);
 	// Insertion_Sort(vetor,TAM);
 	// Pancake_Sort(vetor, TAM);
-	Patience_Sort(vetor, TAM);
-
+	// Patience_Sort(vetor, TAM); // NAO FUNCIONA
+	// Permutation_Sort(vetor, TAM); // PRECISO ENTENDER
+	// Quick_Sort(vetor, TAM);
 
 	
 	printf("Vetor ordenado crescente:\n");
 
-	for(i = 0; i < TAM; i++) {
-		printf("%d	", vetor[i]);
-	}	
+	for(i = 0; i < TAM; i++) printf("%d	", vetor[i]);
 
 	
 	return 0;

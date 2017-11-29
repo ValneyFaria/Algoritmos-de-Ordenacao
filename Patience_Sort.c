@@ -29,12 +29,13 @@ void Patience_Sort(int vetor[], int TAM) {
 		sortedvetor[i] = min;
 		count[pickedRow]--;
 
-		for (j = 0; j < TAM; j++)
+		for (j = 0; j < TAM; j++) {
 			if (count[j] > 0) {
 				min = decks[j][count[j] - 1];
 				pickedRow = j;
 				break;
 			}
+		}
 	}
 
 	free(count);
