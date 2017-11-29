@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void Bubble_Sort(int *vetor, int TAM) {
+void Bubble_Sort(int vetor[], int TAM) {
 	int k, j, aux;
 
 	for (k = TAM - 1; k > 0; k--) { 		// PERCORRE O VETOR DO FINAL PARA O INICIO
@@ -14,7 +14,7 @@ void Bubble_Sort(int *vetor, int TAM) {
 	}
 }
 
-void imprimeCrescente(int *vetor, int TAM) {
+void imprimeCrescente(int vetor[], int TAM) {
 	int i = 0;
 
 	for(i = 0; i < 10; i++) {

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "Heap_Sort.c"
 #include "Merge_Sort.c"
+#include "Radix_Sort.c"
 #include "Bubble_Sort.c"
 #include "Selection_Sort.c"
 
@@ -26,7 +27,8 @@ int main() {
 	// Bubble_Sort(vetor, TAM); // USA PONTEIROS PARA PASSAR COMO PARÂMETROS OS ENDEREÇOS DO VETOR NUMDIG
 	// Selection_Sort(vetor, TAM);
 	// Merge_Sort(vetor, 0, TAM - 1);
-	Heap_Sort(vetor, TAM);
+	// Heap_Sort(vetor, TAM);
+	// Radix_Sort(vetor, TAM);
 
 	
 	printf("O vetor ordenado crescente eh:\n");
