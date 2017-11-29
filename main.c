@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "Bead_Sort.c"
 #include "Heap_Sort.c"
 #include "Merge_Sort.c"
 #include "Radix_Sort.c"
@@ -29,6 +30,7 @@ int main() {
 	// Merge_Sort(vetor, 0, TAM - 1);
 	// Heap_Sort(vetor, TAM);
 	// Radix_Sort(vetor, TAM);
+	// Bead_Sort(vetor, TAM);
 
 	
 	printf("O vetor ordenado crescente eh:\n");
