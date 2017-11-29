@@ -8,6 +8,8 @@
 #include "Cycle_Sort.c"
 #include "Radix_Sort.c"
 #include "Quick_Sort.c"
+#include "Strand_Sort.c"
+#include "Stooge_Sort.c"
 #include "Circle_Sort.c"
 #include "Bubble_Sort.c"
 #include "Pancake_Sort.c"
@@ -60,6 +62,9 @@ int main() {
 	// Patience_Sort(vetor, TAM); // NAO FUNCIONA
 	// Permutation_Sort(vetor, TAM); // PRECISO ENTENDER
 	// Quick_Sort(vetor, TAM);
+	// Stooge_Sort(vetor, 0, TAM - 1);
+	// Strand_Sort(vetor, TAM);
+	
 
 	
 	printf("Vetor ordenado crescente:\n");

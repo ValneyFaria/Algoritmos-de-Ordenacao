@@ -16,10 +16,14 @@ Heap Sort
 Insertion Sort
 Merge Sort
 Pancake Sort
-Patience Sort
-Permutation Sort
+Patience Sort - NAO FUNCIONA
+Permutation Sort - NAO FUNCIONA
 Quick Sort
 Radix Sort
 Selection Sort
 Shell Sort
-Sleep Sort
+Sleep Sort - NAO FUNCIONA
+Stooge Sort
+Strand Sort
+
+FONTE: https://rosettacode.org/wiki/Category:Sorting_Algorithms
