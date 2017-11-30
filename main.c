@@ -60,7 +60,7 @@ int main() {
 	// Insertion_Sort(vetor,TAM);
 	// Pancake_Sort(vetor, TAM);
 	// Patience_Sort(vetor, TAM); // NAO FUNCIONA
-	// Permutation_Sort(vetor, TAM); // PRECISO ENTENDER
+	Permutation_Sort(vetor, TAM); // PRECISO ENTENDER
 	// Quick_Sort(vetor, TAM);
 	// Stooge_Sort(vetor, 0, TAM - 1);
 	// Strand_Sort(vetor, TAM);

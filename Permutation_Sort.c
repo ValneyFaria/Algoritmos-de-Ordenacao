@@ -4,8 +4,10 @@
 
 typedef int (*cmp_func)(const void *, const void *);
 
-void Permutation_Sort(void *a, int n, size_t msize, cmp_func _cmp) {
-	char *p, *q, *tmp = (char *) malloc(msize);
+void Permutation_Sort(void *a, int n, size_t msize) {
+	char *p, *q, *tmp = malloc(msize);
+	cmp_func _cmp;
+
 #	define A(i) ((char *)a + msize * (i))
 #	define swap(a, b) {        \
 		memcpy(tmp, a, msize); \
@@ -34,16 +36,6 @@ void Permutation_Sort(void *a, int n, size_t msize, cmp_func _cmp) {
 	free(tmp);
 }
 
-int scmp(const void *a, const void *b) { 
-	return strcmp(*(const char *const *)a, *(const char *const *)b); 
+int scmp(const void *a, const void *b) {
+	return strcmp(*(const char *const *)a, *(const char *const *)b);
 }
-
-/*int main() {
-	int i;
-	const char *strs[] = {"spqr", "abc", "giant squid", "stuff", "def"};
-	Permutation_Sort(strs, 5, sizeof(*strs), scmp);
-
-	for (i = 0; i < 5; i++)
-		printf("%s\n", strs[i]);
-	return 0;
-}*/
