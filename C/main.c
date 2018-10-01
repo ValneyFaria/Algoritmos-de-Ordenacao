@@ -20,9 +20,6 @@
 #include "Selection_Sort.c"
 #include "Permutation_Sort.c"
 
-
-
-
 #define TAM 10
 
 int main() {
@@ -65,12 +62,11 @@ int main() {
 	// Stooge_Sort(vetor, 0, TAM - 1);
 	// Strand_Sort(vetor, TAM);
 	
-
-	
 	printf("Vetor ordenado crescente:\n");
 
-	for(i = 0; i < TAM; i++) printf("%d	", vetor[i]);
+	for(i = 0; i < TAM; i++) {
+		printf("%d	", vetor[i]);
+	} 
 
-	
 	return 0;
 }
