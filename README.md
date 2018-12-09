@@ -52,9 +52,9 @@ Algoritmos já incluídos:
 
 # JAVA
 
-1 - 
+1 - Select Sort
 
-2 - 
+2 - Heap Sort
 
 # PYTHON
 
