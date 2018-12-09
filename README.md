@@ -58,8 +58,10 @@ Algoritmos já incluídos:
 
 # PYTHON
 
-1 - 
+1 - Bubble Sort
 
-2 - 
+2 - Merge Sort
+
+3 - Quick Sort
 
 FONTE: https://rosettacode.org/wiki/Category:Sorting_Algorithms
