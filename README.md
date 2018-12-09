@@ -1,14 +1,12 @@
 # Algoritmos-de-Ordenacao
 Implementações de diversos algoritmos de ordenação e suas variações.
 
-Algoritmos incluídos:
+Algoritmos já incluídos:
 
-Bead Sort
-
+#C
+1 - Bead Sort
 Bogo Sort
-
 Bubble Sort
-
 Circle Sort
 
 Cocktail Sort
