@@ -3,7 +3,7 @@ Implementações de diversos algoritmos de ordenação e suas variações.
 
 Algoritmos já incluídos:
 
-#C
+# C
 
 1 - Bead Sort
 
@@ -50,13 +50,13 @@ Algoritmos já incluídos:
 22 - Strand Sort
 
 
-#JAVA
+# JAVA
 
 1 - 
 
 2 - 
 
-#PYTHON
+# PYTHON
 
 1 - 
 
