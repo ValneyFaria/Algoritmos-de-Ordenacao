@@ -1,36 +1,46 @@
-def mergeSort(lista):
+class MergeSort:
 
-    if len(lista) > 1:
+    def merge_sort(self, lista_entrada):
 
-        meio = len(lista)/2
+        if len(lista_entrada) > 1:
 
-        listaDaEsquerda = lista[:meio]
-        listaDaDireita = lista[meio:]
+            meio = len(lista_entrada)/2
 
-        mergeSort(listaDaEsquerda)
-        mergeSort(listaDaDireita)
+            lista_esquerda = lista_entrada[:meio]
+            lista_direita = lista_entrada[meio:]
 
-        i = 0
-        j = 0
-        k = 0
+            self.merge_sort(lista_esquerda)
+            self.merge_sort(lista_direita)
 
-        while i < len(listaDaEsquerda) and j < len(listaDaDireita):
+            i = 0
+            j = 0
+            k = 0
 
-            if listaDaEsquerda[i] < listaDaDireita[j]:
-                lista[k] = listaDaEsquerda[i]
+            while i < len(lista_esquerda) and j < len(lista_direita):
+
+                if lista_esquerda[i] < lista_direita[j]:
+                    lista_entrada[k] = lista_esquerda[i]
+                    i += 1
+                else:
+                    lista_entrada[k] = lista_direita[j]
+                    j += 1
+                k += 1
+
+            while i < len(lista_esquerda):
+
+                lista_entrada[k] = lista_esquerda[i]
                 i += 1
-            else:
-                lista[k] = listaDaDireita[j]
+                k += 1
+
+            while j < len(lista_direita):
+                lista_entrada[k] = lista_direita[j]
                 j += 1
-            k += 1
+                k += 1
 
-        while i < len(listaDaEsquerda):
 
-            lista[k] = listaDaEsquerda[i]
-            i += 1
-            k += 1
-
-        while j < len(listaDaDireita):
-            lista[k] = listaDaDireita[j]
-            j += 1
-            k += 1
+if __name__ == "__main__":
+    python_sort = MergeSort()
+    lista_entrada = [72, 35, 8, 90, 65, 44, 31, 22, 29, 78, 83]
+    python_sort.merge_sort(lista_entrada)
+    print('Lista Ordenada:')
+    print(lista_entrada)
